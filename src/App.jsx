@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Layout, Menu, theme } from 'antd';
-import './App.css'; // Import custom CSS
+import './App.scss'; // Import custom CSS
 import mySvg from './assets/logo.svg';
 import BootStrapMenu from "./Components/bootMenu"
 import DJButtonWithPopover from './Components/logoutBtn';
