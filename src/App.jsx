@@ -8,6 +8,7 @@ import { icons } from 'antd/es/image/PreviewGroup';
 import { Routes, Route, Navigate, Link, Router, useParams, useLocation } from "react-router-dom";
 import SiteAdmin from './Sections/SiteAdmin';
 import Reports from './Sections/Reports';
+import Preview from './Sections/Preview';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -76,6 +77,11 @@ const App = () => {
               <Route
                 path='/reports'
                 element={<Reports />}
+                exact
+              ></Route>
+              <Route
+                path='/preview'
+                element={<Preview />}
                 exact
               ></Route>
             </Routes>
