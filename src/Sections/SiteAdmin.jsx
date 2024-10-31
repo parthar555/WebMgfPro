@@ -12,10 +12,10 @@ const SiteAdmin = () => {
       ]
     return (
         <div className='contentBox_cont'>
-              {contentBoxes?.map(itm => {
+              {contentBoxes?.map((itm, id) => {
                 return (
 
-                  <div className='contentBox' >
+                  <div className='contentBox' key={id} >
 
                     <div className='contentBoxes_icon' style={{ backgroundColor: itm?.color, borderColor: itm?.color, color: itm?.fontColor }}>
                       {itm?.icon}

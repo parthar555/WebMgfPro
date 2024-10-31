@@ -42,7 +42,7 @@ const App = () => {
         >
           <div className='header-container'>
             <div className="header-dd">
-              <select className="form-select header-dd" aria-label="Default select example" value="LE-USA025" disabled>
+              <select className="form-select header-dd" aria-label="Default select example" disabled>
                 <option selected>Frito-LayInc.</option>
               </select>
 

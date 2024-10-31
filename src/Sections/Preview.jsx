@@ -7,8 +7,8 @@ import { Row } from 'primereact/row';
 
 const Preview = () => {
     const [sales] = useState([
-        { product: 'Bamboo Watch', lastYearSale: 'Yes', thisYearSale: 'No', lastYearProfit: 54406, thisYearProfit: 43342 },
-        { product: 'Black Watch', lastYearSale: 'Yes', thisYearSale: 'No', lastYearProfit: 423132, thisYearProfit: 312122 },
+        { product: 'Please Choose Seletced Option', lastYearSale: 'Yes', thisYearSale: 'No', lastYearProfit: 54406, thisYearProfit: 43342 },
+        { product: 'Please add purpose of the task', lastYearSale: 'Yes', thisYearSale: 'No', lastYearProfit: 423132, thisYearProfit: 312122 },
     ]);
 
     const lastYearSaleBodyTemplate = (rowData) => {
@@ -35,7 +35,7 @@ const Preview = () => {
     return (
         <div className="card">
             <DataTable value={sales} headerColumnGroup={headerGroup} tableStyle={{ minWidth: '50rem' }}>
-                <Column field="product" />
+                <Column field="product" width="20%" />
                 <Column field="lastYearSale" body={lastYearSaleBodyTemplate} />
                 <Column field="thisYearSale" body={thisYearSaleBodyTemplate} />
             </DataTable>
